@@ -15,8 +15,12 @@ class ProfitSeeder extends Seeder
     public function run()
     {
         SettingProfit::create([
-            'itProfit' => 0.05,
             'manajementProfit' => 0.05,
+            'itProfit' => 0.05,
+            'lvl1' => 0.05,
+            'lvl2' => 0.05,
+            'lvl3' => 0.05,
+            'wagerBonus' => 0.05,
         ]);
     }
 }
