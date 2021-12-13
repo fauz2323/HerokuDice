@@ -20,7 +20,7 @@ class UserController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $user = UserDiceTron::with('history')->where('visible', 1);
+            $user = UserDiceTron::with('history');
 
             return DataTables::of($user)
                 ->addIndexColumn()
