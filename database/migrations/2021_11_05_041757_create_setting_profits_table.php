@@ -17,7 +17,11 @@ class CreateSettingProfitsTable extends Migration
             $table->id();
             $table->double('itProfit');
             $table->double('manajementProfit');
-            $table->bigInteger('maxHigh');
+            $table->double('lvl1');
+            $table->double('lvl2');
+            $table->double('lvl3');
+            $table->double('divider');
+            $table->double('wagerBonus');
             $table->timestamps();
         });
     }
